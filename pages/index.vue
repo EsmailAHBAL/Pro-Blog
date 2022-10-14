@@ -23,7 +23,10 @@
                   {{c['content']}}
                </div>
                <div class="block">
-                <el-button class="button is-dark" @click="POST_TO(c['title'])">Read More</el-button>
+                             <nuxt-link :to='`/product/${c['title']}`'>
+
+                <el-button class="button is-dark">Read More</el-button>
+                  </nuxt-link>
                </div>
             </el-card>
           </div>
