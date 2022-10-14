@@ -71,7 +71,7 @@ interface Idata {
                     console.log('helllo');
 
 
-rr.push(`post/${ID}`)
+rr.push(`/post/${ID}`)
 }
                   return {
         ...toRefs(data),search,
