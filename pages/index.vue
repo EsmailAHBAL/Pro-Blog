@@ -22,7 +22,7 @@
                 <div class="block  is-danger" >
                   {{c['content']}}
                </div>
-                <nuxt-link :to="`/post/${c['title']}`">
+                <nuxt-link :to="`/Post/${c['title']}`">
                   <el-button class="button is-dark">Read More</el-button>
                 </nuxt-link>
             </el-card>
