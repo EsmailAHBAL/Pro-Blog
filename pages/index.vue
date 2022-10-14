@@ -22,11 +22,9 @@
                 <div class="block  is-danger" >
                   {{c['content']}}
                </div>
-               <div class="block">
                 <nuxt-link :to="`/post/${c['title']}`">
+                  <el-button class="button is-dark">Read More</el-button>
                 </nuxt-link>
-                <el-button class="button is-dark">Read More</el-button>
-               </div>
             </el-card>
           </div>
 
@@ -65,17 +63,12 @@ interface Idata {
                 {
                    store.commit('SEARCH',search.value)
 
-                }
+                });
 
-                  );
-            return {
+
+                  return {
         ...toRefs(data),search
-        
     }
     }
   }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
