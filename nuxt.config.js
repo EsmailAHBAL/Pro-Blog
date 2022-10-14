@@ -24,8 +24,8 @@ export default {
   router: {
     extendRoutes(routes, resolve) {
       routes.push({
-        name: 'post',
-        path: '/post/:id',
+        name: 'Post',
+        path: '/Post/:id',
         component: resolve(__dirname, 'pages/Post.vue')
       })
     }
