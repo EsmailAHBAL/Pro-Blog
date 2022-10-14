@@ -23,10 +23,9 @@
                   {{c['content']}}
                </div>
                <div class="block">
-                             <nuxt-link :to='`/product/${c['title']}`'>
-
+                <nuxt-link :to="`/post/${c['title']}`">
+                </nuxt-link>
                 <el-button class="button is-dark">Read More</el-button>
-                  </nuxt-link>
                </div>
             </el-card>
           </div>
@@ -69,16 +68,9 @@ interface Idata {
                 }
 
                   );
-
-                  const POST_TO =(ID:number) => {
-                    console.log('helllo');
-
-
-rr.push(`/post/${ID}`)
-}
-                  return {
-        ...toRefs(data),search,
-        POST_TO
+            return {
+        ...toRefs(data),search
+        
     }
     }
   }
