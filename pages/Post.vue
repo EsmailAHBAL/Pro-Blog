@@ -15,13 +15,11 @@
                 <img :src="a['urlToImage']" style="display: block;object-fit: cover;" @click="TOPOST(a['title'])"/>
               </div>
             </div>
-          <div class="block mt-2"  style="display: flex;justify-content: space-around;">
-
-            <span class="tag is-dark" >
-              {{a.author}}
+          <div class="block mt-2"  style="display: flex;justify-content: space-around;">   <span class="tag is-dark" >
+              {{a['author']}}
             </span>
             <span class="tag is-danger" >
-              {{a.publishedAt}}
+              {{a['publishedAt']}}
             </span>
           </div>
 
